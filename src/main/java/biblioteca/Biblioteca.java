@@ -3,8 +3,6 @@ package biblioteca;
 import lector.Lector;
 import libro.Libro;
 
-import java.util.Arrays;
-import java.util.logging.Logger;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Objects;
@@ -24,8 +22,7 @@ public class Biblioteca {
         }
     }
 
-    public void add_libro(String nombre, int ano, String autor, int copias) {
-        Libro lib = new Libro(nombre, ano, autor, copias);
+    public void add_libro(Libro lib) {
         for (libro.Libro libro : Libros)
             if (Objects.equals(libro.getNombre(), lib.getNombre())) return;
         Libros.add(lib);

@@ -1,12 +1,14 @@
 package libro;
 
+import autor.Autor;
+
 public class Libro {
     String nombre;
     int ano;
-    String autor;
+    Autor autor;
     int copias;
 
-    public Libro(String nombre, int ano, String autor, int copias) {
+    public Libro(String nombre, int ano, Autor autor, int copias) {
         this.nombre = nombre;
         this.ano = ano;
         this.autor = autor;
@@ -29,7 +31,7 @@ public class Libro {
         return ano;
     }
 
-    public String getAutor() {
+    public Autor getAutor() {
         return autor;
     }
 }
