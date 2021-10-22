@@ -1,5 +1,8 @@
+import biblioteca.Biblioteca;
+
 class Main {
     public static void main(String[] args) {
-        String a = ("Hello world!");
+        Biblioteca BioAlert = new Biblioteca();
+        BioAlert.add_libro("Pepe",2005,"Juan Manuel",0);
     }
 }
